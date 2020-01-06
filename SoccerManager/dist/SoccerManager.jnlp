@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SoccerManager.jnlp">
+  <information>
+    <title>SoccerManager</title>
+    <vendor>Chris</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SoccerManager.jar" size="2559240" download="eager" />
+    <jar href="lib\ojdbc6.jar" size="2739670" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="soccer.Main"  name="SoccerManager" />
+  <update check="always"/>
+</jnlp>

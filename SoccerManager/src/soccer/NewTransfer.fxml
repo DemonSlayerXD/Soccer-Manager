@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soccer.NewTransferController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Background1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="670.0" prefWidth="1250.0" style="-fx-background-color: rgba(0,0,0,0.50);" AnchorPane.topAnchor="40.0">
+         <children>
+            <TextField fx:id="pid" layoutX="327.0" layoutY="215.0" onAction="#updatepname">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="pname" editable="false" layoutX="878.0" layoutY="215.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ncid" layoutX="327.0" layoutY="393.0" onAction="#updatencname">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="transferfee" layoutX="327.0" layoutY="474.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ocname" editable="false" layoutX="878.0" layoutY="304.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ocid" layoutX="327.0" layoutY="306.0" onAction="#updateocname">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ncname" editable="false" layoutX="878.0" layoutY="391.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="555.0" layoutY="63.0" text="Transfer" textFill="WHITE">
+               <font>
+                  <Font name="Old English Text MT" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="234.0" layoutY="217.0" text="Player ID:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="738.0" layoutY="217.0" text="Player Name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="207.0" layoutY="395.0" text="New Club ID:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="208.0" layoutY="476.0" text="Transfer Fee:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="716.0" layoutY="303.0" text="Old Club Name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="308.0" text="Old Club ID:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="713.0" layoutY="392.0" text="New Club Name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="transferButton" layoutX="489.0" layoutY="599.0" mnemonicParsing="false" onAction="#transfer" style="-fx-background-color: rgba(255,255,255,0.90);" stylesheets="@buttonhover.css" text="Transfer Player">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="713.0" layoutY="599.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: rgba(255,255,255,0.90);" stylesheets="@buttonhover.css" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="closeLabel" layoutX="1244.0" layoutY="-5.0" onMouseClicked="#close" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="minimizeLabel" layoutX="1214.0" layoutY="-10.0" onMouseClicked="#minimize" text="_" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

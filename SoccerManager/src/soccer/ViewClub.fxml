@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soccer.ViewClubController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Background1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="15.0" layoutY="36.0" prefHeight="670.0" prefWidth="1250.0" style="-fx-background-color: rgba(0,0,0,0.50);" AnchorPane.topAnchor="40.0">
+         <children>
+            <TextField fx:id="cid" editable="false" layoutX="148.0" layoutY="159.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cname" layoutX="148.0" layoutY="222.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="coach" layoutX="148.0" layoutY="283.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="country" layoutX="148.0" layoutY="340.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="founded" layoutX="148.0" layoutY="399.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="homeground" layoutX="532.0" layoutY="164.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="overall" editable="false" layoutX="532.0" layoutY="224.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="wins" layoutX="148.0" layoutY="456.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="losses" layoutX="148.0" layoutY="512.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="values" layoutX="532.0" layoutY="488.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="516.0" layoutY="53.0" text="View Club" textFill="WHITE">
+               <font>
+                  <Font name="Old English Text MT" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="162.0" text="Club ID:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="222.0" text="Club Name:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="283.0" text="Coach:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="342.0" text="Country:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="401.0" text="Founded:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="166.0" text="Home Ground:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="225.0" text="Overall Rating:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="459.0" text="Wins:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="514.0" text="Losses:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="443.0" layoutY="489.0" text="Value:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveButton" layoutX="482.0" layoutY="619.0" mnemonicParsing="false" onAction="#save" style="-fx-background-color: rgba(255,255,255,0.90);" stylesheets="@buttonhover.css" text="Save Changes">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="706.0" layoutY="619.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: rgba(255,255,255,0.90);" stylesheets="@buttonhover.css" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <BarChart fx:id="clubBar" layoutX="794.0" layoutY="159.0" legendVisible="false" prefHeight="420.0" prefWidth="424.0" style="-fx-background-color: rgba(255,255,255,0.90);" title="Club Stats">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <TextField fx:id="resourcesa" layoutX="532.0" layoutY="416.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="support" layoutX="532.0" layoutY="350.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="management" layoutX="532.0" layoutY="286.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="409.0" layoutY="286.0" text="Management:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="434.0" layoutY="352.0" text="Support:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="419.0" text="Resources:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="closeLabel" layoutX="1242.0" layoutY="-5.0" onMouseClicked="#close" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="minimizeLabel" layoutX="1214.0" layoutY="-10.0" onMouseClicked="#minimize" text="_" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
